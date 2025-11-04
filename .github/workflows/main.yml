@@ -2,7 +2,7 @@ name: Auto Refresh Commit  # 工作流名称
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # 每15分钟运行一次（UTC 时间）；用 crontab.guru 测试
+    - cron: '0 0 * * *'  # 每15分钟运行一次（UTC 时间）；用 crontab.guru 测试
   workflow_dispatch:  # 允许手动触发测试
 
 jobs:
